@@ -16,6 +16,10 @@ WORKDIR /var/www
 # Copy the Laravel app into the container
 COPY . /var/www
 
+RUN pwd
+RUN ls .
+
+
 # Install the Laravel app dependencies
 RUN composer install
 
